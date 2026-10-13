@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Quiet Light",
+    "python.analysis.extraPaths": [
+        "./astronomy/import "
+    ]
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Galaxy Geeks' Community</title>
+    <style>
+        /* 90s Retro Styles */
+        body {
+            background-image: url(https://blob.gifcities.org/gifcities/PP3XGMEYBYI4PIHYG3XJUZSM4VCFE4UM.gif);
+            font-family: "Courier New", Courier, monospace;
+            padding: 20px;
+        }
+        
+    
+        h1, h2 {
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            font-family: "Henny Penny", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .container {
+            width: 1100px;
+             height: 1350px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+             background-color: whitesmoke;     
+             border-radius: 2px;       
+             border: 3px solid #66CC00;  
+             padding: 0 auto;               
+             margin: 0 auto;
+             position:relative;
+            top: 0px;
+        }
+        .divider {
+            position: relative;
+            top: -10px;
+            left: 50px;
+        }
+
+        /* 90s Windows-Style Box */
+        .retro-box {
+            background-color: #c0c0c0;
+            color: #000000;
+            border: 3px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 0px #000000;
+            width: 600px;
+            position: relative;
+            left: 250px;
+        }
+
+        .box-header {
+            background: linear-gradient(90deg, #295200, #66CC00);
+            color: white;
+            padding: 4px 6px;
+            font-weight: bold;
+            margin-top: -15px;
+            margin-left: -15px;
+            margin-right: -15px;
+            margin-bottom: 15px;
+        }
+
+        /* Buttons & Inputs */
+        button {
+            background-color: #c0c0c0;
+            border: 2px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+            padding: 4px 10px;
+            cursor: pointer;
+        }
+
+        button:active {
+            border-color: #808080 #ffffff #ffffff #808080;
+        }
+
+        input[type="text"], textarea {
+            background-color: #ffffff;
+            border: 2px solid;
+            border-color: #808080 #ffffff #ffffff #808080;
+            padding: 4px;
+            font-family: "Courier New", monospace;
+            width: 95%;
+        }
+
+        /* Poll Results Bar */
+        .bar-container {
+            background-color: #808080;
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .bar {
+            background-color: green;
+            color: white;
+            padding: 3px;
+            text-align: right;
+            font-size: 12px;
+            width: 0%;
+            transition: width 0.5s;
+        }
+
+        /* Message Board Feed */
+        #messageFeed {
+            background-color: #ffffff;
+            border: 2px solid;
+            border-color: #808080 #ffffff #ffffff #808080;
+            height: 200px;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        .post {
+            border-bottom: 1px dashed #808080;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        .post-user {
+            color: green;
+            font-weight: bold;
+        }
+        /* LIST OF GALAXY GEEKS */
+        .marq {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            background-attachment: fixed;
+            background-repeat: repeat;
+            position: relative;
+            top: -10px;
+            left: 0px;
+
+;
+        }
+        .ad {
+            background: none;             
+            padding: 0 auto;               
+            margin: 0 auto; 
+            position: relative;
+            top: 0px;
+            left: 10px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>GALAXY GEEKS' COMMUNITY</h1>
+    <p style="text-align:center; font-family: Georgia, 'Times New Roman', Times, serif; color:black; font-size: 20px;">Welcome to the community when you can vote, chat with other Galaxy Geeks and know about our members!</p>
+    <hr style="border-top: 3px solid #66CC00; position: relative; top: -10px;">
+    <img src="starsgreen.gif" class="divider">
+    <img src="starsgreen.gif" class="divider">
+    <img src="starsgreen.gif" class="divider">
+    <img src="starsgreen.gif" class="divider">
+    <img src="starsgreen.gif" class="divider">
+    <hr style="border-top: 3px solid #66CC00; position: relative; top: -10px;">
+<!--SECTION 3: MEMBER'S PAGE-->
+         <div class="retro-box" id="loGG" style="width: 600px; position: relative; top: 5px; left: 250px;">
+        <div class="box-header">GALAXY GEEKS</div>
+        <p><a href="community2.html"><strong>Click here to see a list of Galaxy Geeks!</a></strong></p>
+    </div>
+    <hr style="border-top: 3px dotted #66CC00; position: relative; top: 0px;">
+    <!-- SECTION 1: POLL OF THE WEEK -->
+    <div class="retro-box" id="pollBox">
+        <div class="box-header"> ASTRONOMY POLL OF THE WEEK</div>
+        <p><strong>What is the coolest planet in the Solar System?</strong></p>
+        
+        <div id="pollForm">
+            <label><input type="radio" name="planet" value="Saturn"> Saturn (Nice rings)</label><br>
+            <label><input type="radio" name="planet" value="Mars"> Mars (Aliens?)</label><br>
+            <label><input type="radio" name="planet" value="Pluto"> Pluto (Still a planet to me)</label><br><br>
+            <button onclick="castVote()">VOTE NOW!</button>
+        </div>
+
+        <div id="pollResults" style="display:none;">
+            <p>Saturn:</p>
+            <div class="bar-container"><div id="barSaturn" class="bar">0%</div></div>
+            <p>Mars:</p>
+            <div class="bar-container"><div id="barMars" class="bar">0%</div></div>
+            <p>Pluto:</p>
+            <div class="bar-container"><div id="barPluto" class="bar">0%</div></div>
+            <br>
+            <button onclick="resetPoll()">Vote Again</button>
+        </div>
+    </div>
+ <hr style="border-top: 3px dotted #66CC00; position: relative; top: 0px;">
+    <!-- SECTION 2: MESSAGE BOARD -->
+    <div class="retro-box">
+        <div class="box-header">COSMIC MESSAGE BOARD</div>
+        
+        <label>Handle/Alias:</label><br>
+        <input type="text" id="username" placeholder="e.g., StarGazer99"><br><br>
+        
+        <label>Transmission:</label><br>
+        <textarea id="message" rows="3" placeholder="Type your message here..."></textarea><br><br>
+        
+        <button onclick="postMessage()">SEND TRANSMISSION</button>
+
+        <div id="messageFeed">
+            <!-- Messages will appear here -->
+        </div>
+    </div>
+     <hr style="border-top: 3px solid #66CC00; position: relative; top: -20px;">
+      <marquee class="marq" direction="center"  bgcolor="whitesmoke" loop="infinite">
+            <div class="main">
+                <img src="earthad.gif" class="ad">
+                <img src="earthad2.gif" class="ad">
+                <img src="earthad3.gif" class="ad">
+                <img src="earthad4.gif" class="ad">
+                <img src="earthad5.gif" class="ad">
+            </div>
+        </marquee>
+    <img src="greengif3.gif" style="position: relative; top: -615px; left: 460px; background: none;">
+    <img src="greengif1.gif" style="position: relative; top: -1132px; left: 350px; background: none;">
+    <img src="greengif2.gif" style="position: relative; top: -998px; left: 460px; background: none;">
+    <img src="https://blob.gifcities.org/gifcities/7IXDDEBK3ALANSA3COJVYBGWUDY7QOON.gif" class="1" style="position: relative; top: -1315px; left: 105px; width: 40px; height: auto;">
+    <img src="https://blob.gifcities.org/gifcities/7IXDDEBK3ALANSA3COJVYBGWUDY7QOON.gif" class="2" style="position: relative; top: -1315px; left: 730px; width: 40px; height: auto;">
+</div>
+<script>
+    // --- JavaScript for Interactive Features ---
+
+    // 1. POLL LOGIC (Saves to Browser LocalStorage)
+    let votes = JSON.parse(localStorage.getItem('clubVotes')) || { Saturn: 5, Mars: 3, Pluto: 8 };
+
+    if(localStorage.getItem('hasVoted') === 'true') {
+        showResults();
+    }
+
+    function castVote() {
+        const selected = document.querySelector('input[name="planet"]:checked');
+        if (!selected) {
+            alert("Select a planet first, space cadet!");
+            return;
+        }
+        
+        votes[selected.value]++;
+        localStorage.setItem('clubVotes', JSON.stringify(votes));
+        localStorage.setItem('hasVoted', 'true');
+        showResults();
+    }
+
+    function showResults() {
+        document.getElementById('pollForm').style.display = 'none';
+        document.getElementById('pollResults').style.display = 'block';
+
+        const total = votes.Saturn + votes.Mars + votes.Pluto;
+        
+        const saturnPct = Math.round((votes.Saturn / total) * 100);
+        const marsPct = Math.round((votes.Mars / total) * 100);
+        const plutoPct = Math.round((votes.Pluto / total) * 100);
+
+        document.getElementById('barSaturn').style.width = saturnPct + '%';
+        document.getElementById('barSaturn').innerText = saturnPct + '%';
+        
+        document.getElementById('barMars').style.width = marsPct + '%';
+        document.getElementById('barMars').innerText = marsPct + '%';
+        
+        document.getElementById('barPluto').style.width = plutoPct + '%';
+        document.getElementById('barPluto').innerText = plutoPct + '%';
+    }
+
+    function resetPoll() {
+        localStorage.removeItem('hasVoted');
+        document.getElementById('pollForm').style.display = 'block';
+        document.getElementById('pollResults').style.display = 'none';
+    }
+
+
+    // 2. MESSAGE BOARD LOGIC (Saves to Browser LocalStorage)
+    let messages = JSON.parse(localStorage.getItem('clubMessages')) || [
+        { user: "Jellyfishpearl88", text: "The rules is that be nice, polite and kind to everyone! :D" }
+    ];
+
+    function displayMessages() {
+        const feed = document.getElementById('messageFeed');
+        feed.innerHTML = '';
+        messages.forEach(msg => {
+            feed.innerHTML += `
+                <div class="post">
+                    <span class="post-user">&lt;${msg.user}&gt;</span> ${msg.text}
+                </div>
+            `;
+        });
+        feed.scrollTop = feed.scrollHeight; // Auto-scroll to bottom
+    }
+
+    function postMessage() {
+        const userField = document.getElementById('username');
+        const textField = document.getElementById('message');
+
+        if (!userField.value || !textField.value) {
+            alert("Fill out both fields to broadcast!");
+            return;
+        }
+
+        messages.push({ user: userField.value, text: textField.value });
+        localStorage.setItem('clubMessages', JSON.stringify(messages));
+        
+        textField.value = ''; // Clear message box
+        displayMessages();
+    }
+
+    // Load initial messages on page load
+    displayMessages();
+</script>
+
+</div>
+
+</body>
+</html>
