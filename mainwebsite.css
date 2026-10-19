@@ -1,6 +1,13 @@
         body {
              background-image: url(background2.png);
-             padding: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+
+
+             
         }
         .head-box {
              width: 1370px;
